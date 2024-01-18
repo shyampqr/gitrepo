@@ -16,7 +16,7 @@ public class EmployeeController {
     private EmployeeRepository employeeRepository;
     @GetMapping(value = "/employees")
     public List<Employee> getAllEmployee(){
-
+        System.out.println("Adding sysout im coroller");
         return employeeRepository.findAll();
     }
     //find employee by id
